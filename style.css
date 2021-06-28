@@ -46,11 +46,11 @@ body {
 .email__title {
   color: var(--gray500);
   font-weight: 500;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .email__detail {
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 500;
   line-height: 1.8;
   max-width: 400px;
@@ -103,7 +103,7 @@ body {
 }
 
 .email__resend {
-  font-size: 12px;
+  font-size: 10.5px;
   color: var(--gray300);
 }
 .email__resend a {
