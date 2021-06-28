@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Email Verficitaion</title>
+</head>
+<body>
+    <div class="email container">
+        <img src="/images/mail.png" alt="mail" class="email__img">
+        <h1 class="email__title">Verify your email</h1>
+        <p class="email__detail">We sent an email to yourmail@domain.com.<br/> Just click on the verification link or enter the 5 digit code</p>
+        <form class="email__digitCode">
+            <div class="email__code">
+                <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" class="email__codeInput" maxlength="1">
+                <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" class="email__codeInput" maxlength="1">
+                <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" class="email__codeInput" maxlength="1">
+                <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" class="email__codeInput" maxlength="1">
+                <input type="text" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" class="email__codeInput" maxlength="1">
+            </div>
+            <button class="email__codeBtn">Confirm</button>
+        </form>
+        <small class="email__resend">Didn't receive code ? <a>Resend Code</a></small>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
